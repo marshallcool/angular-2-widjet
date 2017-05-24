@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>LeaderBoard</title>
+  <base href="/">
+
+  <meta http-equiv="cleartype" content="on">
+  <meta name="MobileOptimized" content="320">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <script>
+    $("#selectBackground ul li a").click(function (e) {
+      e.preventDefault();
+      $("#selectBackground ul li a").removeClass('active');
+      $(this).addClass('active');
+    })
+
+  </script>
+  <app-root>Loading...</app-root>
+</body>
+
+</html>

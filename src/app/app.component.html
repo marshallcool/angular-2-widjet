@@ -1,0 +1,52 @@
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse" id="panel">
+  <button class="navbar-toggler navbar-toggler-right toggle-button" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  <a class="navbar-brand" href="#">leaderboard</a>
+
+  <div class="collapse navbar-collapse" id="selectTime">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link nav-link--active" (click)="onFilterTime('today')">Today</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="onFilterTime('week')">This week</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="onFilterTime('all')">all time</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="main-content">
+  <div class="main-content-players">
+    <ul class="main-content-players__list">
+      <li class="main-content-players__item" *ngFor="let player of players">
+        <p class="main-content-players__id">{{player.id}}</p>
+        <img src="https://pp.userapi.com/c840027/v840027954/6c7e/7kI6kt8whW8.jpg" alt="" class="main-content-players__avatar">
+        <img src="https://pp.userapi.com/c639719/v639719954/20be5/ZaCKIWPkIkM.jpg" alt="" class="main-content-players__icon">
+        <p class="main-content-players__name">{{player.name}}</p>
+        <p class="main-content-players__scope">{{player.scope}}</p>
+      </li>
+    </ul>
+  </div>
+  <nav id="menu">
+    <div class="main-content-games main-content-games--mobile">
+      <ul class="main-content-games__list">
+        <li class="main-content-games__item" *ngFor="let game of games" (click)="onFilterGame(game.name)">
+          <p class="main-content-games__title">{{game.name}}</p>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main-content-games">
+    <ul class="main-content-games__list">
+      <li class="main-content-games__item" *ngFor="let game of games" (click)="onFilterGame(game.name)">
+        <p class="main-content-games__title">{{game.name}}</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

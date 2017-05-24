@@ -1,0 +1,81 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Valentina Stepanova",
+      "games" : "eggz",
+      "scope" : 10000,
+      "dt" : "week"
+    },
+    {
+      "id": 2,
+      "name": "Valentina Stepanova",
+      "games" : "eggz",
+      "scope" : 10000,
+      "dt" : "today"
+    },
+    {
+      "id": 3,
+      "name": "Valentina Stepanova",
+      "games" : "eggz",
+      "scope" : 10000,
+      "dt" : "week"
+    },
+    {
+      "id": 4,
+      "name": "Valentina Stepanova",
+      "games" : "eggz",
+      "scope" : 1000,
+      "dt" : "today"
+    },
+    {
+      "id": 5,
+      "name": "Valentina Stepanova",
+      "games" : "spider",
+      "scope" : 12000,
+      "dt" : "today"
+    },
+    {
+      "id": 6,
+      "name": "Valentina Stepanova",
+      "games" : "spider",
+      "scope" : 101230,
+      "dt" : "week"
+    },
+    {
+      "id": 7,
+      "name": "Valentina Stepanova",
+      "games" : "solitare",
+      "scope" : 999,
+      "dt" : "today"
+    },
+    {
+      "id": 8,
+      "name": "Valentina Stepanova",
+      "games" : "solitare",
+      "scope" : 10020,
+      "dt" : "week"
+    },
+    {
+      "id": 9,
+      "name": "Valentina Stepanova",
+      "games" : "solitare",
+      "scope" : 1200,
+      "dt" : "week"
+    },
+    {
+      "id": 10,
+      "name": "Valentina Stepanova",
+      "games" : "solitare",
+      "scope" : 1000,
+      "dt" : "today"
+    },
+    {
+      "id": 11,
+      "name": "Valentina Stepanova",
+      "games" : "solitare",
+      "scope" : 992,
+      "dt" : "today"
+    }
+  ]
+}
